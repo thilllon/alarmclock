@@ -35,7 +35,7 @@ const app = express()
 
     const alarmHistory = await AlarmModel.find(
       {},
-      { _id: 1, createdAt: 1, status: 1, statusText: 1, url: 1, time: 1 },
+      { _id: 0, createdAt: 1, status: 1, statusText: 1, url: 1, time: 1 },
       { limit, sort: { epoch: -1 } }
     ).exec();
 
