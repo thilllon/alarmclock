@@ -7,7 +7,7 @@ const shortid = require('shortid');
 require('./database').connectDB();
 
 const port = process.env.PORT;
-const period = 25 * 60 * 1000;
+const period = 5 * 60 * 1000;
 // const period = 2 * 1000;
 
 const app = express()
